@@ -15,6 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/x-rst",
     install_requires=[
+        "click",
     ],
     extras_require={
         "test": [
@@ -39,4 +40,9 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
+    entry_points={
+        "console_scripts": [
+            "ocdscardinal = ocdscardinal.__main__:main",
+        ],
+    },
 )
